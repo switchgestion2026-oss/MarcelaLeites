@@ -124,8 +124,7 @@
   .faq-q:hover{padding-left:12px}
   .faq-q span{flex:1 1 auto;font-size:clamp(16px,2vw,17.5px);font-weight:500;line-height:1.45;color:var(--borgona)}
   .faq-icon{position:relative;width:20px;height:20px;flex:0 0 auto}
-  .faq-icon::before,.faq-icon::after{content:"";position:absolute;top:50%;left:0;width:20px;height:1px;background:var(--terracota)}
-  .faq-icon::after{transform:rotate(90deg);transition:transform .3s ease}
+.faq-item.is-open .faq-icon::after{transform:translateY(-50%) rotate(0deg)}
   .faq-item.is-open .faq-icon::after{transform:rotate(0deg)}
   .faq-a{max-height:0;overflow:hidden;opacity:0;transition:max-height .4s ease,opacity .4s ease}
   .faq-a p{margin:0;padding:0 clamp(4px,6vw,60px) 30px 4px;font-size:15.5px;line-height:1.75}
@@ -222,7 +221,7 @@
         </div>
         <div class="hero-note" data-reveal>
           <i></i>
-          <p style="margin:0;font-size:13.5px;line-height:1.6">Atención en CABA y Provincia de Buenos Aires<br /><span style="color:var(--terracota)">(San Martín, San Isidro, Moreno, Quilmes, La Matanza)</span></p>
+          <p style="margin:0;font-size:13.5px;line-height:1.6">Atención en CABA y Provincia de Buenos Aires</p>
         </div>
       </div>
     </div>

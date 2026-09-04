@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Marcela Leites — Abogada | Familia, Sucesiones, Laboral y Consumidor</title>
+<meta name="description" content="Abogada especialista en Derecho Civil (Familia y Sucesiones), Derecho Laboral y Derecho del Consumidor. Atención en CABA y Provincia de Buenos Aires: San Martín, Quilmes y La Matanza." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --borgona:#6B1E2E; --terracota:#B46464; --marfil:#F9F3F1; --beige:#EAD7D2; --carbon:#4A4A4A;
+    --line:rgba(107,30,46,0.14); --wrap:1240px;
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{margin:0;background:var(--marfil);color:var(--carbon);font-family:Manrope,system-ui,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+  a{color:var(--borgona);text-decoration:none;transition:color .25s ease}
+  a:hover{color:var(--terracota)}
+  h1,h2,h3,.serif{font-family:'DM Serif Display',serif;font-weight:400;letter-spacing:-1px;color:var(--borgona)}
+  p{text-wrap:pretty}
+  .wrap{max-width:var(--wrap);margin:0 auto;padding:0 clamp(20px,5vw,32px)}
+  .eyebrow{margin:0 0 18px;font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--terracota)}
+  .rule{width:64px;height:1px;background:var(--terracota)}
+
+  /* Header */
+  .header{position:sticky;top:0;z-index:60;background:rgba(249,243,241,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(107,30,46,.12);padding:20px 0;transition:padding .35s ease,box-shadow .35s ease,background .35s ease}
+  .header.is-scrolled{padding:12px 0;background:rgba(249,243,241,.97);box-shadow:0 1px 24px rgba(107,30,46,.10)}
+  .header-inner{display:flex;align-items:center;gap:clamp(12px,3vw,32px);flex-wrap:nowrap}
+  .logo img{display:block;height:52px;width:auto;transition:height .3s ease}
+  .header.is-scrolled .logo img{height:44px}
+  .nav{display:flex;gap:22px;row-gap:8px;margin-left:auto;align-items:center;flex-wrap:wrap}
+  .nav a{font-size:13.5px;white-space:nowrap;color:var(--carbon);padding-bottom:2px;border-bottom:1px solid transparent}
+  .nav a:hover{color:var(--borgona);border-color:var(--terracota)}
+  .btn{display:inline-flex;align-items:center;gap:12px;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;padding:18px 30px;transition:background .3s ease,transform .3s ease,color .3s ease;cursor:pointer;border:0}
+  .btn:hover{transform:translateY(-2px)}
+  .btn-solid{background:var(--borgona);color:var(--marfil)}
+  .btn-solid:hover{background:var(--terracota);color:var(--marfil)}
+  .btn-ghost{border:1px solid var(--borgona);color:var(--borgona);background:transparent}
+  .btn-ghost:hover{background:var(--beige);color:var(--borgona)}
+  .btn-light{background:var(--marfil);color:var(--borgona)}
+  .btn-light:hover{background:var(--beige);color:var(--borgona)}
+  .dot{display:inline-block;width:18px;height:18px;border:1px solid rgba(249,243,241,.7);border-radius:50%;flex:0 0 auto}
+  .btn-light .dot{border-color:rgba(107,30,46,.45)}
+  .btn-header{padding:14px 22px;font-size:12px;margin-left:auto}
+  .burger{display:none;width:44px;height:44px;background:transparent;border:1px solid rgba(107,30,46,.28);cursor:pointer;padding:0;flex-direction:column;align-items:center;justify-content:center;gap:5px;flex:0 0 auto}
+  .burger span{display:block;width:20px;height:1px;background:var(--borgona)}
+  .mobile-menu{display:none;border-top:1px solid rgba(107,30,46,.12);margin-top:12px;padding:8px clamp(20px,5vw,32px) 16px;flex-direction:column}
+  .mobile-menu.is-open{display:flex}
+  .mobile-menu a{padding:15px 0;font-size:15px;color:var(--carbon);border-bottom:1px solid rgba(107,30,46,.1)}
+  .mobile-menu a:last-child{border-bottom:0}
+
+  /* Hero */
+  .hero{border-bottom:1px solid var(--line)}
+  .hero-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(420px,100%),1fr));align-items:stretch}
+  .hero-copy{padding:clamp(56px,8vw,110px) clamp(20px,5vw,32px);display:flex;flex-direction:column;justify-content:center;max-width:760px;margin-left:auto;width:100%}
+  .hero-copy-inner{max-width:600px;margin-left:auto;width:100%}
+  .hero-kicker{margin:0 0 26px;font-size:11.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--terracota);line-height:2.1}
+  h1{margin:0;font-size:clamp(36px,5vw,66px);line-height:1.06;letter-spacing:-1.5px}
+  .hero-lead{margin:0;font-size:clamp(16px,2vw,17.5px);line-height:1.7;max-width:44ch}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin:40px 0 34px}
+  .hero-note{display:flex;align-items:flex-start;gap:12px;padding-top:26px;border-top:1px solid var(--line);max-width:420px}
+  .hero-note i{display:block;width:9px;height:9px;border:1px solid var(--terracota);border-radius:50%;margin-top:6px;flex:0 0 auto}
+  .hero-media{position:relative;min-height:clamp(320px,52vw,620px);background:url('hero.webp') center/cover no-repeat}
+  .hero-media::after{content:"";position:absolute;inset:24px;border:1px solid rgba(249,243,241,.45);pointer-events:none}
+
+  /* Áreas */
+  .section{padding:clamp(64px,9vw,110px) 0}
+  .head-center{text-align:center;max-width:760px;margin:0 auto clamp(40px,6vw,64px)}
+  h2{margin:0;font-size:clamp(28px,3.4vw,46px);line-height:1.15}
+  .grid-hair{display:grid;gap:1px;background:var(--line);border:1px solid var(--line)}
+  .cols-4{grid-template-columns:repeat(auto-fit,minmax(min(250px,100%),1fr))}
+  .cols-3{grid-template-columns:repeat(auto-fit,minmax(min(150px,100%),1fr))}
+  .card{background:var(--marfil);padding:44px clamp(22px,3vw,32px) 38px;display:flex;flex-direction:column;gap:16px;transition:background .35s ease,transform .35s ease}
+  .card:hover{background:#fff;transform:translateY(-4px)}
+  .card h3{margin:0;font-size:25px;line-height:1.2;letter-spacing:-.5px}
+  .card p{margin:0;font-size:14.5px;line-height:1.7}
+  .card .tag{margin:auto 0 0;padding-top:22px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--terracota);border-top:1px solid rgba(107,30,46,.12)}
+  .plus{position:relative;width:44px;height:44px;border:1px solid var(--terracota);border-radius:50%;flex:0 0 auto}
+  .plus::before,.plus::after{content:"";position:absolute;left:50%;top:50%;background:var(--borgona);transform:translate(-50%,-50%)}
+  .plus::before{width:14px;height:1px}
+  .plus::after{width:1px;height:14px}
+
+  /* Sobre mí */
+  .split{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(340px,100%),1fr));gap:clamp(32px,5vw,64px);align-items:center}
+  .media-portrait{position:relative;min-height:clamp(320px,46vw,540px);background:url('perfil.webp') center/cover no-repeat}
+  .media-portrait::after,.media-warm::after{content:"";position:absolute;inset:20px;border:1px solid rgba(249,243,241,.4)}
+  .media-warm{position:relative;min-height:clamp(280px,40vw,440px);background:url('cercania.webp') center/cover no-repeat}
+  .body-copy{margin:0 0 18px;font-size:16px;line-height:1.75;max-width:52ch}
+  .pillars{border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .pillars .cell{background:var(--marfil);padding:26px 20px}
+  .pillars .num{margin:0 0 8px;font-family:'DM Serif Display',serif;font-size:22px;color:var(--terracota)}
+  .pillars p{margin:0;font-size:14px;line-height:1.6}
+
+  /* Problemas */
+  .band-beige{background:var(--beige);padding:clamp(64px,8vw,100px) 0}
+  .band-beige .eyebrow{color:var(--borgona)}
+  .problems{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:0 clamp(28px,4vw,56px)}
+  .problem{display:flex;gap:18px;padding:24px 0;border-bottom:1px solid rgba(107,30,46,.22)}
+  .problem span{font-family:'DM Serif Display',serif;font-size:16px;color:var(--terracota);line-height:1.6;flex:0 0 auto}
+  .problem p{margin:0;font-size:16.5px;line-height:1.6;color:var(--borgona);font-weight:500}
+  .pull{margin:48px 0 0;font-family:'DM Serif Display',serif;font-style:italic;font-size:clamp(19px,2.4vw,22px);line-height:1.5;color:var(--borgona);max-width:60ch}
+
+  /* Proceso */
+  .cols-steps{grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr))}
+  .step{background:var(--marfil);padding:40px clamp(22px,3vw,30px);transition:background .35s ease}
+  .step:hover{background:#fff}
+  .step .n{display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border:1px solid var(--terracota);border-radius:50%;font-family:'DM Serif Display',serif;font-size:20px;color:var(--borgona);margin-bottom:22px}
+  .step h3{margin:0 0 12px;font-size:22px;line-height:1.25;letter-spacing:-.4px}
+  .step p{margin:0;font-size:14.5px;line-height:1.7}
+
+  /* Cercanía */
+  .band-soft{background:#F1E5E2;padding:clamp(64px,8vw,100px) 0}
+  .care{margin:0;padding:0;list-style:none;display:grid;gap:14px;max-width:46ch}
+  .care li{display:flex;gap:14px;align-items:flex-start;font-size:15.5px;line-height:1.6}
+  .care i{display:block;width:18px;height:1px;background:var(--terracota);margin-top:12px;flex:0 0 auto}
+
+  /* FAQ */
+  .faq-wrap{max-width:1000px;margin:0 auto;padding:0 clamp(20px,5vw,32px)}
+  .faq{border-top:1px solid rgba(107,30,46,.16)}
+  .faq-item{border-bottom:1px solid rgba(107,30,46,.16)}
+  .faq-q{width:100%;display:flex;align-items:center;gap:24px;background:transparent;border:0;padding:28px 4px;cursor:pointer;text-align:left;font-family:Manrope,sans-serif;transition:padding-left .3s ease}
+  .faq-q:hover{padding-left:12px}
+  .faq-q span{flex:1 1 auto;font-size:clamp(16px,2vw,17.5px);font-weight:500;line-height:1.45;color:var(--borgona)}
+  .faq-icon{position:relative;width:20px;height:20px;flex:0 0 auto}
+  .faq-icon::before,.faq-icon::after{content:"";position:absolute;top:50%;left:0;width:20px;height:1px;background:var(--terracota)}
+  .faq-icon::after{transform:rotate(90deg);transition:transform .3s ease}
+  .faq-item.is-open .faq-icon::after{transform:rotate(0deg)}
+  .faq-a{max-height:0;overflow:hidden;opacity:0;transition:max-height .4s ease,opacity .4s ease}
+  .faq-a p{margin:0;padding:0 clamp(4px,6vw,60px) 30px 4px;font-size:15.5px;line-height:1.75}
+
+  /* Contacto */
+  .contact{background:var(--borgona);color:var(--marfil);padding:clamp(64px,9vw,110px) 0}
+  .contact h2,.contact .serif{color:var(--marfil)}
+  .contact .eyebrow{color:var(--beige)}
+  .contact-lead{margin:0 0 40px;font-size:clamp(16px,2vw,16.5px);line-height:1.7;color:var(--beige);max-width:46ch}
+  .contact-meta{margin-top:56px;padding-top:34px;border-top:1px solid rgba(249,243,241,.28);display:grid;grid-template-columns:repeat(auto-fit,minmax(min(240px,100%),1fr));gap:32px}
+  .contact-meta p{margin:0;font-size:14px;line-height:1.65;color:var(--beige)}
+  .contact-meta b{display:block;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(249,243,241,.6);margin-bottom:6px;font-weight:500}
+  .contact .btn-light{padding:22px 38px;font-size:13.5px}
+
+  /* CTA final */
+  .cta-final{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr));gap:clamp(24px,4vw,48px);align-items:center}
+  .cta-final blockquote{margin:0}
+  .cta-final blockquote p{margin:0;font-family:'DM Serif Display',serif;font-style:italic;font-size:clamp(24px,3vw,38px);line-height:1.3;color:var(--borgona);max-width:24ch}
+
+  /* Footer */
+  .footer{background:var(--marfil);border-top:1px solid var(--line);padding:56px 0 34px}
+  .footer-top{display:flex;flex-wrap:wrap;gap:32px;align-items:center;justify-content:space-between;padding-bottom:34px;border-bottom:1px solid rgba(107,30,46,.12)}
+  .footer-top img{display:block;height:52px;width:auto}
+  .footer-nav{display:flex;flex-wrap:wrap;gap:24px}
+  .footer-nav a{font-size:13px;color:var(--carbon)}
+  .footer-nav a:hover{color:var(--borgona)}
+  .footer-bottom{display:flex;flex-wrap:wrap;gap:18px;justify-content:space-between;padding-top:26px}
+  .footer-bottom p{margin:0;font-size:12px}
+  .credit a{border-bottom:1px solid rgba(107,30,46,.3)}
+  .tagline{letter-spacing:.16em;text-transform:uppercase;color:var(--terracota)}
+
+  /* Reveal */
+  [data-reveal]{opacity:0;transform:translateY(20px);transition:opacity .8s cubic-bezier(.16,.8,.24,1),transform .8s cubic-bezier(.16,.8,.24,1)}
+  [data-reveal].is-in{opacity:1;transform:none}
+  @media (prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none;transition:none}}
+
+  @media (max-width:1040px){
+    .nav{display:none}
+    .burger{display:flex}
+    .logo img{height:40px}
+    .header.is-scrolled .logo img{height:38px}
+    .btn-header{padding:12px 18px;font-size:11px}
+  }
+  @media (max-width:520px){
+    .logo img,.header.is-scrolled .logo img{height:34px}
+    .btn-header{padding:11px 14px}
+    .btn-header .label{display:none}
+    .btn{padding:16px 22px}
+    .footer-top img{height:40px}
+  }
+</style>
+</head>
+<body>
+
+<header class="header" id="header">
+  <div class="wrap header-inner">
+    <a class="logo" href="#inicio"><img src="logo.webp" alt="Marcela Leites — Abogada" /></a>
+    <nav class="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#areas">Áreas de práctica</a>
+      <a href="#proceso">Cómo trabajo</a>
+      <a href="#preguntas">Preguntas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="btn btn-solid btn-header" href="https://wa.me/5491100000000?text=Hola%20Marcela%2C%20quisiera%20hacerte%20una%20consulta." target="_blank" rel="noopener"><span class="label">Escribime</span><span class="dot" style="width:16px;height:16px"></span></a>
+    <button class="burger" id="burger" type="button" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <nav class="mobile-menu" id="mobile-menu">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#areas">Áreas de práctica</a>
+    <a href="#proceso">Cómo trabajo</a>
+    <a href="#preguntas">Preguntas</a>
+    <a href="#contacto">Contacto</a>
+    <a href="legales.html">Aviso legal</a>
+  </nav>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="hero-copy-inner">
+        <p class="hero-kicker" data-reveal>Tu problema.<br />Mis herramientas.<br />Una solución real.</p>
+        <h1 data-reveal>Asesoramiento legal<br />claro y cercano.</h1>
+        <div class="rule" data-reveal style="margin:34px 0 26px"></div>
+        <p class="hero-lead" data-reveal>Te acompaño para que entiendas tu situación, conozcas tus opciones y tomes la mejor decisión. Sin tecnicismos, con respuestas concretas.</p>
+        <div class="hero-actions" data-reveal>
+          <a class="btn btn-solid" href="https://wa.me/5491100000000?text=Hola%20Marcela%2C%20quisiera%20hacerte%20una%20consulta." target="_blank" rel="noopener"><span class="dot"></span>Escribime por WhatsApp</a>
+          <a class="btn btn-ghost" href="#contacto">Agendá tu consulta</a>
+        </div>
+        <div class="hero-note" data-reveal>
+          <i></i>
+          <p style="margin:0;font-size:13.5px;line-height:1.6">Atención en CABA y Provincia de Buenos Aires<br /><span style="color:var(--terracota)">(San Martín, Quilmes, La Matanza)</span></p>
+        </div>
+      </div>
+    </div>
+    <div class="hero-media" role="img" aria-label="Marcela Leites en su estudio"></div>
+  </div>
+</section>
+
+<section class="section" id="areas" style="padding-bottom:clamp(28px,4vw,40px)">
+  <div class="wrap">
+    <div class="head-center" data-reveal>
+      <p class="eyebrow">Áreas de práctica</p>
+      <h2>Soluciones legales en las áreas que más te importan.</h2>
+    </div>
+    <div class="grid-hair cols-4">
+      <article class="card" data-reveal>
+        <span class="plus"></span>
+        <h3>Derecho de Familia</h3>
+        <p>Divorcios, alimentos, cuidado personal, régimen de comunicación, convenios y uniones convivenciales, con acompañamiento en cada paso.</p>
+        <p class="tag">Personas y familias</p>
+      </article>
+      <article class="card" data-reveal>
+        <span class="plus"></span>
+        <h3>Sucesiones</h3>
+        <p>Te guío en todo el proceso sucesorio de forma clara y ordenada: desde la apertura hasta la inscripción de los bienes.</p>
+        <p class="tag">Patrimonio familiar</p>
+      </article>
+      <article class="card" data-reveal>
+        <span class="plus"></span>
+        <h3>Derecho Laboral</h3>
+        <p>Despidos, liquidaciones, registración deficiente y reclamos. Asesoro tanto a trabajadores como a empleadores.</p>
+        <p class="tag">Trabajo</p>
+      </article>
+      <article class="card" data-reveal>
+        <span class="plus"></span>
+        <h3>Derecho del Consumidor</h3>
+        <p>Reclamos por productos y servicios, cobros indebidos, planes de ahorro, bancos y coberturas médicas.</p>
+        <p class="tag">Consumo</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="sobre-mi">
+  <div class="wrap split">
+    <div class="media-portrait" data-reveal role="img" aria-label="Retrato de Marcela Leites"></div>
+    <div data-reveal>
+      <p class="eyebrow">Sobre mí</p>
+      <h2 style="margin-bottom:28px">Hola, soy Marcela Leites.</h2>
+      <p class="body-copy">Soy abogada y me especializo en Derecho Civil (Familia y Sucesiones), Derecho Laboral y Derecho del Consumidor.</p>
+      <p class="body-copy" style="margin-bottom:34px">Mi trabajo no termina en el trámite: empieza cuando entendés qué está pasando y qué caminos tenés. Te explico las opciones en palabras simples, con sus tiempos y sus costos, para que la decisión sea tuya y esté bien tomada.</p>
+      <div class="grid-hair cols-3 pillars" style="border-left:0;border-right:0">
+        <div class="cell"><p class="num">01</p><p>Escucha activa antes de opinar</p></div>
+        <div class="cell"><p class="num">02</p><p>Explicaciones sin tecnicismos</p></div>
+        <div class="cell"><p class="num">03</p><p>Compromiso en cada etapa</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band-beige">
+  <div class="wrap">
+    <div data-reveal style="max-width:640px;margin-bottom:clamp(36px,5vw,56px)">
+      <p class="eyebrow">Quizás te está pasando esto</p>
+      <h2>Si algo de esto te suena, hay una salida.</h2>
+    </div>
+    <div class="problems">
+      <div class="problem" data-reveal><span>—</span><p>Me separé y no sé cómo organizar lo económico ni el cuidado de mis hijos.</p></div>
+      <div class="problem" data-reveal><span>—</span><p>Falleció un familiar y no entiendo qué trámite tengo que iniciar.</p></div>
+      <div class="problem" data-reveal><span>—</span><p>Me despidieron y no sé si lo que me ofrecen es lo que me corresponde.</p></div>
+      <div class="problem" data-reveal><span>—</span><p>Trabajo sin estar registrado como corresponde y no sé qué puedo reclamar.</p></div>
+      <div class="problem" data-reveal><span>—</span><p>Pagué un producto o servicio que nunca me entregaron y no me responden.</p></div>
+      <div class="problem" data-reveal><span>—</span><p>Tengo una pyme y necesito ordenar la relación con mi personal.</p></div>
+    </div>
+    <p class="pull" data-reveal>Una primera conversación suele ordenar más de lo que imaginás.</p>
+  </div>
+</section>
+
+<section class="section" id="proceso">
+  <div class="wrap">
+    <div class="head-center" data-reveal>
+      <p class="eyebrow">¿Cómo trabajo?</p>
+      <h2>Un proceso simple y claro.</h2>
+    </div>
+    <div class="grid-hair cols-steps">
+      <div class="step" data-reveal><span class="n">1</span><h3>Me contás tu situación</h3><p>Escribime por WhatsApp y contame tu caso en pocas líneas. Lo leo antes de responderte.</p></div>
+      <div class="step" data-reveal><span class="n">2</span><h3>Analizo tu caso</h3><p>Reviso la documentación y te doy una primera orientación clara sobre dónde estás parada/o.</p></div>
+      <div class="step" data-reveal><span class="n">3</span><h3>Definimos la estrategia</h3><p>Evaluamos juntas/os las opciones posibles, con tiempos y costos, y elegís con información real.</p></div>
+      <div class="step" data-reveal><span class="n">4</span><h3>Te acompaño</h3><p>Llevo adelante el proceso con seguimiento y te aviso cada novedad, sin que tengas que perseguirme.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="band-soft">
+  <div class="wrap split">
+    <div data-reveal>
+      <p class="eyebrow">Cercanía humana</p>
+      <h2 style="margin-bottom:26px;font-size:clamp(26px,3.2vw,42px)">Detrás de cada expediente hay una persona.</h2>
+      <p class="body-copy" style="margin-bottom:26px">Los temas de familia, trabajo o consumo llegan en momentos difíciles. Por eso cuido cómo te explico las cosas, respondo tus dudas cuantas veces haga falta y te digo también lo que no conviene hacer.</p>
+      <ul class="care">
+        <li><i></i>Respondo tus dudas cuantas veces lo necesites.</li>
+        <li><i></i>Te digo también lo que no conviene hacer.</li>
+        <li><i></i>Priorizo los acuerdos cuando son el mejor camino.</li>
+        <li><i></i>Trato reservado y respetuoso de tu historia.</li>
+      </ul>
+    </div>
+    <div class="media-warm" data-reveal role="img" aria-label="Consulta con acompañamiento cercano"></div>
+  </div>
+</section>
+
+<section class="section" id="preguntas">
+  <div class="faq-wrap">
+    <div data-reveal style="margin-bottom:clamp(32px,5vw,52px);max-width:620px">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2>Lo que suelen preguntarme.</h2>
+    </div>
+    <div class="faq" id="faq">
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>¿Cómo es la primera consulta?</span><span class="faq-icon"></span></button>
+        <div class="faq-a"><p>Charlamos sobre tu situación, te hago las preguntas necesarias y te explico en palabras simples qué opciones tenés, con tiempos estimados y qué implica cada camino. Salís sabiendo qué se puede hacer.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>¿Atendés de manera virtual?</span><span class="faq-icon"></span></button>
+        <div class="faq-a"><p>Sí. Trabajo con consultas por videollamada y también presenciales en CABA y en la Provincia de Buenos Aires (San Martín, Quilmes y La Matanza), siempre con turno previo.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>¿Qué necesito llevar o tener a mano?</span><span class="faq-icon"></span></button>
+        <div class="faq-a"><p>Con tu DNI y cualquier documentación vinculada al tema (recibos de sueldo, telegramas, contratos, escrituras, comprobantes o intercambios de mensajes) alcanza para empezar. Si no tenés nada, igual podemos avanzar.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>¿Cómo se acuerdan los honorarios?</span><span class="faq-icon"></span></button>
+        <div class="faq-a"><p>Antes de iniciar cualquier gestión te informo por escrito cómo se calculan los honorarios y qué gastos puede tener el trámite. Sin sorpresas ni costos que aparezcan después.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>¿Trabajás con empresas y pymes?</span><span class="faq-icon"></span></button>
+        <div class="faq-a"><p>Sí. Asesoro a empleadores en relaciones laborales, documentación del personal, desvinculaciones y prevención de conflictos, además de temas de consumo vinculados a su actividad.</p></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" type="button" aria-expanded="false"><span>¿Cuánto puede demorar mi caso?</span><span class="faq-icon"></span></button>
+        <div class="faq-a"><p>Depende del tema y de la vía que elijamos. Muchos conflictos se resuelven por acuerdo en semanas; otros requieren una instancia judicial más extensa. Te doy una estimación realista desde el inicio.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contacto">
+  <div class="wrap">
+    <p class="eyebrow" data-reveal>Contacto</p>
+    <h2 data-reveal style="margin-bottom:24px;font-size:clamp(30px,3.6vw,48px)">Hablemos sobre tu consulta.</h2>
+    <p class="contact-lead" data-reveal>Escribime por WhatsApp y contame tu situación en pocas líneas. Te respondo a la brevedad y te digo con claridad si puedo ayudarte.</p>
+    <a class="btn btn-light" data-reveal href="https://wa.me/5491100000000?text=Hola%20Marcela%2C%20quisiera%20hacerte%20una%20consulta." target="_blank" rel="noopener"><span class="dot" style="width:20px;height:20px"></span>Escribime por WhatsApp</a>
+    <div class="contact-meta" data-reveal>
+      <p><b>Atención</b>CABA y Provincia de Buenos Aires<br />San Martín · Quilmes · La Matanza</p>
+      <p><b>Modalidad</b>Consultas presenciales y virtuales, con turno previo.</p>
+      <p><b>Respuesta</b>Lunes a viernes, dentro del día hábil.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band-beige">
+  <div class="wrap cta-final">
+    <blockquote data-reveal><p>“Entender tu situación es el primer paso para resolverla.”</p></blockquote>
+    <div data-reveal style="display:flex;flex-direction:column;align-items:flex-start;gap:16px">
+      <a class="btn btn-solid" href="https://wa.me/5491100000000?text=Hola%20Marcela%2C%20quisiera%20hacerte%20una%20consulta." target="_blank" rel="noopener"><span class="dot"></span>Escribime hoy</a>
+      <p style="margin:0;font-size:14px">Estoy para acompañarte.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <img src="logo.webp" alt="Marcela Leites — Abogada" />
+      <nav class="footer-nav">
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#areas">Áreas de práctica</a>
+        <a href="#proceso">Cómo trabajo</a>
+        <a href="#preguntas">Preguntas</a>
+        <a href="#contacto">Contacto</a>
+        <a href="legales.html">Aviso legal</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Marcela Leites. Todos los derechos reservados.</p>
+      <p class="credit">Diseño y desarrollo: <a href="#">Switch Gestión</a></p>
+      <p class="tagline">Derecho para una vida real</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var header = document.getElementById('header');
+  function onScroll(){ header.classList.toggle('is-scrolled', window.scrollY > 24); }
+  window.addEventListener('scroll', onScroll, {passive:true}); onScroll();
+
+  var burger = document.getElementById('burger');
+  var menu = document.getElementById('mobile-menu');
+  burger.addEventListener('click', function(){
+    var open = menu.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  menu.querySelectorAll('a').forEach(function(a){
+    a.addEventListener('click', function(){ menu.classList.remove('is-open'); burger.setAttribute('aria-expanded','false'); });
+  });
+  window.addEventListener('resize', function(){
+    if (window.innerWidth > 1040) { menu.classList.remove('is-open'); burger.setAttribute('aria-expanded','false'); }
+  });
+
+  document.querySelectorAll('#faq .faq-q').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var item = btn.parentElement, panel = item.querySelector('.faq-a');
+      var open = !item.classList.contains('is-open');
+      document.querySelectorAll('#faq .faq-item').forEach(function(it){
+        it.classList.remove('is-open');
+        var p = it.querySelector('.faq-a'); p.style.maxHeight = '0px'; p.style.opacity = '0';
+        it.querySelector('.faq-q').setAttribute('aria-expanded','false');
+      });
+      if (open){
+        item.classList.add('is-open');
+        panel.style.maxHeight = panel.scrollHeight + 40 + 'px';
+        panel.style.opacity = '1';
+        btn.setAttribute('aria-expanded','true');
+      }
+    });
+  });
+
+  var items = Array.prototype.slice.call(document.querySelectorAll('[data-reveal]'));
+  function revealVisible(){
+    var d = 0;
+    items.forEach(function(el){
+      if (el.classList.contains('is-in')) return;
+      var r = el.getBoundingClientRect();
+      if (r.top < window.innerHeight * 0.95 && r.bottom > -80){
+        setTimeout(function(){ el.classList.add('is-in'); }, d); d += 70;
+      }
+    });
+  }
+  requestAnimationFrame(revealVisible);
+  window.addEventListener('scroll', revealVisible, {passive:true});
+  window.addEventListener('resize', revealVisible);
+  setTimeout(function(){ items.forEach(function(el){ el.classList.add('is-in'); }); }, 3000);
+})();
+</script>
+</body>
+</html>
